@@ -1,0 +1,151 @@
+.cep-pagina {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8efff;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  padding: 24px;
+}
+
+.cep-cartao {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 1px 3px rgba(20, 30, 50, 0.06), 0 8px 24px rgba(20, 30, 50, 0.08);
+}
+
+.cep-cabecalho {
+  margin-bottom: 28px;
+}
+
+.cep-selo {
+  display: inline-block;
+  font-size: 12px;
+  color: #2563eb;
+  background: #e8efff;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.cep-titulo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1b2430;
+  margin: 0 0 6px 0;
+}
+
+.cep-subtitulo {
+  font-size: 14px;
+  color: #5b6472;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cep-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cep-linha-busca {
+  display: flex;
+  gap: 10px;
+}
+
+.cep-input-cep {
+  flex: 1;
+  font-size: 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #c6cdd9;
+  outline: none;
+  background: #ffffff;
+  color: #1b2430;
+  color-scheme: light;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cep-input-cep:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.cep-botao {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #2563eb;
+  border: none;
+  border-radius: 10px;
+  padding: 0 22px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.cep-botao:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.cep-botao:disabled {
+  background: #a9b7ce;
+  cursor: not-allowed;
+}
+
+.cep-erro {
+  margin: 0;
+  font-size: 13px;
+  color: #b3261e;
+  background: #fbeae9;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.cep-confirmacao {
+  margin: 0;
+  font-size: 13px;
+  color: #1e6f4c;
+}
+
+.cep-grade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.cep-campo-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cep-campo-largo {
+  grid-column: 1 / -1;
+}
+
+.cep-campo-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5b6472;
+}
+
+.cep-campo-input {
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #c6cdd9;
+  outline: none;
+  color: #1b2430;
+  background: #fafbfc;
+  color-scheme: light;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cep-campo-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
