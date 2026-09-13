@@ -44,7 +44,7 @@ export default function CepForm() {
     setEncontrado(false);
 
     try {
-      const resposta = await fetch(`https://viacep.com.br/ws/${cepLimpo}/json/`);
+      const resposta = await fetch(`http://localhost:3000/cep/${cepLimpo}`);
 
       if (!resposta.ok) {
         throw new Error("Falha na comunicação com o servidor.");
