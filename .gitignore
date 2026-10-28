@@ -1,0 +1,9 @@
+node_modules/
+front/node_modules/
+BACK/node_modules/
+BACK/API/node_modules/
+
+.env
+dist/
+build/
+*.log
